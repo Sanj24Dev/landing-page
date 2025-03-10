@@ -11,6 +11,7 @@
 
     <style>
         /* General Page Styling */
+        
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
@@ -21,8 +22,8 @@
             align-items: center;
             padding: 30px;
         }
-
         /* Main Container */
+        
         .container {
             width: 90%;
             max-width: 500px;
@@ -33,24 +34,24 @@
             text-align: center;
             animation: fadeIn 1s ease-in-out;
         }
-
         /* Headings */
+        
         h1 {
             color: #333;
             font-weight: 600;
         }
-
+        
         p {
             color: #666;
             font-size: 14px;
         }
-
         /* Features List */
+        
         ul {
             list-style: none;
             padding: 0;
         }
-
+        
         ul li {
             background: url('https://img.icons8.com/ios-filled/20/4CAF50/checkmark.png') no-repeat left center;
             background-size: 18px;
@@ -58,8 +59,8 @@
             margin: 10px 0;
             color: #333;
         }
-
         /* Input Field */
+        
         input[type="email"] {
             width: 100%;
             padding: 12px;
@@ -69,13 +70,13 @@
             font-size: 14px;
             transition: 0.3s;
         }
-
+        
         input[type="email"]:focus {
             border-color: #4CAF50;
             outline: none;
         }
-
         /* Button */
+        
         button {
             background: #4CAF50;
             color: white;
@@ -87,20 +88,20 @@
             margin-top: 15px;
             transition: 0.3s;
         }
-
+        
         button:hover {
             background: #388E3C;
         }
-
         /* Counter Section */
+        
         .counter {
             margin-top: 20px;
             font-size: 14px;
             color: #333;
             font-weight: bold;
         }
-
         /* Fade-in Animation */
+        
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -111,8 +112,8 @@
                 transform: translateY(0);
             }
         }
-
         /* Job Posting & Extension Demo */
+        
         .job-demo-container {
             display: flex;
             justify-content: space-between;
@@ -124,24 +125,24 @@
             border-radius: 12px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
-
         /* Job Posting Styling */
+        
         .job-posting {
             flex: 2;
             padding-right: 20px;
         }
-
+        
         .job-posting h3 {
             color: #333;
             margin-bottom: 5px;
         }
-
+        
         .job-posting p {
             font-size: 14px;
             color: #555;
         }
-
         /* Extension UI Styling */
+        
         .extension-ui {
             flex: 1;
             background: #f9f9f9;
@@ -150,35 +151,35 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
-
+        
         .trust-score {
             font-size: 22px;
             font-weight: bold;
             color: green;
         }
-
+        
         .status {
             font-size: 14px;
             font-weight: bold;
             padding: 5px 10px;
             border-radius: 5px;
         }
-
+        
         .verified {
             background: #4CAF50;
             color: white;
         }
-
+        
         .warning {
             background: #FFC107;
             color: black;
         }
-
+        
         .scam-alert {
             background: #E53935;
             color: white;
         }
-
+        
         .report-btn {
             margin-top: 10px;
             background: #E53935;
@@ -189,7 +190,7 @@
             cursor: pointer;
             font-size: 12px;
         }
-
+        
         .report-btn:hover {
             background: #C62828;
         }
@@ -202,43 +203,49 @@
         <h1>Job Posting Legitimacy Checker</h1>
         <p>Verify job postings, reduce scams, and gain confidence in your applications with our Chrome extension.</p>
 
-        <h2>Why Use This Extension?</h2>
-        <ul>
-            <li>Detects fraudulent job listings</li>
-            <li>Provides trust scores for postings</li>
-            <li>Saves time by filtering scams</li>
-        </ul>
-
-        <h2>Stay Updated!</h2>
-        <p>Enter your email to get notified when we launch.</p>
-        <input type="email" id="email" placeholder="Enter your email">
-        <button onclick="notifyMe()">Notify Me</button>
-
-        <div class="counter">
-            <p>Website Visits: <span id="visitCount">0</span></p>
-            <p>Notify Button Clicks: <span id="clickCount">0</span></p>
-        </div>
-    </div>
-
-    <!-- Job Posting Demo Section -->
-    <div class="job-demo-container">
-        <!-- Mock Job Posting -->
-        <div class="job-posting">
-            <h3>Software Engineer - Remote</h3>
-            <p><strong>Company:</strong> TechSoft Inc.</p>
-            <p><strong>Location:</strong> Remote</p>
-            <p><strong>Salary:</strong> $90,000 - $120,000</p>
-            <p><strong>Description:</strong> We are looking for a passionate software engineer to join our team...</p>
+        <!-- Split Sections -->
+        <div class="container">
+            <h2>Why Use This Extension?</h2>
+            <ul>
+                <li>Detects fraudulent job listings</li>
+                <li>Provides trust scores for postings</li>
+                <li>Saves time by filtering scams</li>
+            </ul>
         </div>
 
-        <!-- Extension UI -->
-        <div class="extension-ui">
-            <p class="trust-score">Trust Score: 85%</p>
-            <p class="status verified">Verified</p>
-            <p>✅ Legitimate company</p>
-            <p>✅ Positive user reviews</p>
-            <p>⚠️ Job details need verification</p>
-            <button class="report-btn">Report Job</button>
+        <!-- Job Posting Demo Section -->
+        <div class="job-demo-container">
+            <!-- Mock Job Posting -->
+            <div class="job-posting">
+                <h3>Software Engineer - Remote</h3>
+                <p><strong>Company:</strong> TechSoft Inc.</p>
+                <p><strong>Location:</strong> Remote</p>
+                <p><strong>Salary:</strong> $90,000 - $120,000</p>
+                <p><strong>Description:</strong> We are looking for a passionate software engineer to join our team...</p>
+            </div>
+
+            <!-- Extension UI -->
+            <div class="extension-ui">
+                <p class="trust-score">Trust Score: 85%</p>
+                <p class="status verified">Verified</p>
+                <p>✅ Legitimate company</p>
+                <p>✅ Positive user reviews</p>
+                <p>⚠️ Job details need verification</p>
+                <button class="report-btn">Report Job</button>
+            </div>
+        </div>
+
+        <!-- Stay Updated Section -->
+        <div class="container">
+            <h2>Stay Updated!</h2>
+            <p>Enter your email to get notified when we launch.</p>
+            <input type="email" id="email" placeholder="Enter your email">
+            <button onclick="notifyMe()">Notify Me</button>
+
+            <div class="counter">
+                <p>Website Visits: <span id="visitCount">0</span></p>
+                <p>Notify Button Clicks: <span id="clickCount">0</span></p>
+            </div>
         </div>
     </div>
 
